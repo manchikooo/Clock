@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import './App.scss';
+import {AnalogClock} from "./Clock/AnalogClock";
+import {DigitalClock} from "./Clock/DigitalClock";
+import styles from "./Clock/Clock.module.scss"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const [toggleClock, setToggleClock] = useState<boolean>(true)
+
+    return (
+        <div className="App">
+            {toggleClock ? <AnalogClock/> : <DigitalClock/>}
+            <div className={styles.buttonStyle} onClick={() => setToggleClock(!toggleClock)}>
+                <div>change clock</div>
+            </div>
+        </div>
+    );
 }
 
 export default App;
