@@ -1,28 +1,14 @@
 .clockWrapper {
+  position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-size: 100%;
-}
-
-.clockContainer {
-  border: 1px solid;
   border-radius: 50%;
-  background: url("../common/фон.jpeg") no-repeat;
-  background-size: 100vh;
-}
-
-.clock {
+  background: url("../common/циферблат.png") no-repeat center center/93% 93%,
+  url("../common/фон.jpeg") no-repeat center center/100vh 100vh;
   border: 4px solid;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 55vh;
   height: 55vh;
-  background: url("../common/циферблат.png") no-repeat center / cover;
-  background-size: 93% 93%;
   box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
   inset 0 -15px 15px rgba(255, 255, 255, 0.05),
   0 15px 15px rgba(0, 0, 0, 0.3),
@@ -56,8 +42,11 @@
         height: 13vh;
         z-index: 10;
         border-radius: 6px 6px 0 0;
-        background: url("../common/фон-стена.jpeg");
+        background: black;
         background-size: 100px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%);
       }
     }
   }
@@ -80,8 +69,11 @@
         height: 18vh;
         z-index: 10;
         border-radius: 6px 6px 0 0;
-        background: url("../common/фон-стена.jpeg");
+        background: black;
         background-size: 100px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%);
       }
     }
   }
@@ -100,16 +92,17 @@
       &:before {
         content: '';
         position: absolute;
-        width: 2px;
-        height: 190px;
+        width: 0.3vh;
+        height: 23vh;
         z-index: 10;
         border-radius: 6px 6px 0 0;
-        background: url("../common/фон-стена.jpeg");
+        background: black;
         background-size: 100px;
       }
     }
   }
 }
+
 
 .buttonStyle {
   display: flex;
@@ -121,6 +114,6 @@
   border-radius: 50%;
   text-align: center;
   border: 10px black;
-  background:rgba(241,255,197,0.7);
+  background: rgba(241, 255, 197, 0.7);
   margin-top: 20px;
 }
