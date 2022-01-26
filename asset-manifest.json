@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Clock/static/css/main.dd91a487.css",
+    "main.js": "/Clock/static/js/main.207d3c1b.js",
+    "static/js/787.fb878543.chunk.js": "/Clock/static/js/787.fb878543.chunk.js",
+    "static/media/34891.jpg": "/Clock/static/media/34891.9fd93a76680abc902c9d.jpg",
+    "static/media/фон.jpeg": "/Clock/static/media/фон.7641e9d8133c51e69855.jpeg",
+    "static/media/циферблат.png": "/Clock/static/media/циферблат.af2311c37ba0820f65b4.png",
+    "index.html": "/Clock/index.html",
+    "main.dd91a487.css.map": "/Clock/static/css/main.dd91a487.css.map",
+    "main.207d3c1b.js.map": "/Clock/static/js/main.207d3c1b.js.map",
+    "787.fb878543.chunk.js.map": "/Clock/static/js/787.fb878543.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd91a487.css",
+    "static/js/main.207d3c1b.js"
+  ]
+}
