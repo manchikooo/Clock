@@ -1,9 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import styles from './Clock.module.scss'
 
-type ClockPropsType = {
-
-}
+type ClockPropsType = {}
 const getTime = (num: number) => num < 10 ? '0' + num : num
 
 export const AnalogClock = (props: ClockPropsType) => {
@@ -26,16 +24,16 @@ export const AnalogClock = (props: ClockPropsType) => {
 
     return (
         <div className={styles.clockWrapper}>
-                <div className={styles.hour}>
-                    <div className={styles.hours}
-                         style={{transform: `rotateZ(${+hoursString + (+minutesString / 12)}deg)`}}>{}</div>
-                </div>
-                <div className={styles.minute}>
-                    <div className={styles.minutes} style={{transform: `rotateZ(${+minutesString}deg)`}}>{}</div>
-                </div>
-                <div className={styles.second}>
-                    <div className={styles.seconds} style={{transform: `rotateZ(${+secondsString}deg)`}}>{}</div>
-                </div>
+            <div className={styles.hour}>
+                <div className={styles.hours}
+                     style={{transform: `rotateZ(${+hoursString + (+minutesString / 12)}deg)`}}>{}</div>
+            </div>
+            <div className={styles.minute}>
+                <div className={styles.minutes} style={{transform: `rotateZ(${+minutesString}deg)`}}>{}</div>
+            </div>
+            <div className={styles.second}>
+                <div className={styles.seconds} style={{transform: `rotateZ(${+secondsString}deg)`}}>{}</div>
+            </div>
         </div>
     )
 };
