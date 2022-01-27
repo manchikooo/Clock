@@ -6,17 +6,19 @@ const getTime = (num: number) => num < 10 ? '0' + num : num
 
 export const AnalogClock = (props: ClockPropsType) => {
 
-    const foo = () => {
+    const getSecondsFunction = () => {
         return Number(date.getSeconds())
     }
 
     const [date, setDate] = useState<Date>(new Date())
-    const [sec, setSec] = useState(foo())
+
+    const [seconds, setSeconds] = useState(getSecondsFunction())
+
 
     useEffect(() => {
         const intervalID = setInterval(() => {
             setDate(new Date())
-            setSec(sec => sec + 1)
+            setSeconds(sec => sec + 1)
         }, 1000)
 
         return () => clearInterval(intervalID)
@@ -26,7 +28,7 @@ export const AnalogClock = (props: ClockPropsType) => {
 
     const hoursString = getTime(date.getHours() * 30)
     const minutesString = getTime(date.getMinutes() * deg)
-    const secondsString = getTime(sec * deg)
+    const secondsString = getTime(seconds * deg)
 
     return (
         <div className={styles.clockWrapper}>
