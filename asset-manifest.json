@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Clock/static/css/main.37ddde04.css",
+    "main.css": "/Clock/static/css/main.30905517.css",
     "main.js": "/Clock/static/js/main.56774992.js",
     "static/js/787.fb878543.chunk.js": "/Clock/static/js/787.fb878543.chunk.js",
     "static/media/фон-цветы-светлый.jpg": "/Clock/static/media/фон-цветы-светлый.f104b30c4842eb5d9489.jpg",
     "static/media/циферблат.png": "/Clock/static/media/циферблат.af2311c37ba0820f65b4.png",
     "index.html": "/Clock/index.html",
-    "main.37ddde04.css.map": "/Clock/static/css/main.37ddde04.css.map",
+    "main.30905517.css.map": "/Clock/static/css/main.30905517.css.map",
     "main.56774992.js.map": "/Clock/static/js/main.56774992.js.map",
     "787.fb878543.chunk.js.map": "/Clock/static/js/787.fb878543.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.37ddde04.css",
+    "static/css/main.30905517.css",
     "static/js/main.56774992.js"
   ]
 }
